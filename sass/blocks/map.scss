@@ -1,0 +1,21 @@
+.map {
+    margin: 0px;
+    position: relative;
+}
+.map img {
+    max-width: 100%;
+}
+@media (min-width: $tablet) {
+    .map {
+        width: 100%;
+    }
+}
+
+.map iframe {
+    border: none;
+    height: 350px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}

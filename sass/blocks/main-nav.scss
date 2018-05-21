@@ -1,0 +1,101 @@
+.main-nav__link {
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 40px;
+    text-decoration: none;
+    display: block;
+    padding: 8px 0 7px;
+    text-align: center;
+    border-top: 1px solid #9ac2db;
+    box-shadow: 0 -1px 0 0 #678fa8;
+}
+.main-nav__list {
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.main-nav__list::after {
+    position: absolute;
+    content: "";
+    display: block;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 7px;
+    background: url(../img/shadow.png) center center repeat-x;
+}
+.main-nav__logo {
+    display: table;
+    margin: 0 auto -43px;
+}
+.main-nav {
+    position: relative;
+}
+.main-nav__toggle-btn{
+    position: absolute;
+    right: 14px;
+    bottom: 58px;
+    background: transparent;
+    border: none;
+}
+.main-nav__toggle-btn svg{
+    fill: #81b3d2;
+}
+.main-nav__link:hover, .main-nav__link:focus {
+    background: #669ec0;
+}
+.main-nav__link:active{
+    background: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+}
+.main-nav__link--active{
+    color: #766357;
+}
+.main-nav__link--active:hover, .main-nav__link--active:focus {
+    color: #604e43;
+}
+.main-nav__link--active:active{
+    opacity: 0.3;
+}
+@media(min-width:$tablet) {
+    .main-nav__list {
+        display: flex;
+    }
+    .main-nav__list::after {
+        display: none;
+    }
+    .main-nav__logo {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%)
+    }
+    .main-nav__toggle-btn {
+        display: none;
+    }
+    .main-nav__link {
+        color: #000000;
+        border: none;
+        box-shadow: none;
+        font-size: 14px;
+        line-height: 26px;
+    }
+    .main-nav__link:hover, .main-nav__link:focus {
+        color: #8bb9d5;
+        background: none;
+    }
+    .main-nav__link:active{
+        color: #cacaca;
+    }
+    .main-nav__link--active{
+        color: #766357;
+    }
+    .main-nav__link--active:hover, .main-nav__link--active:focus {
+        color: #604e43;
+    }
+    .main-nav__link--active:active{
+        opacity: 0.3;
+    }
+}

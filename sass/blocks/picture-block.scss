@@ -1,0 +1,25 @@
+.picture-block__title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 26px;
+    text-align: center;
+    padding: 0 20px;
+}
+.picture-block__number, .picture-block__desc {
+    font-size: 14px;
+    color: #ffffff;
+    line-height: 21px;
+    text-align: center;
+    padding: 0 20px;
+}
+.picture-block__number {
+    margin: 0 auto;
+    display: table;
+}
+@media(min-width:$tablet) {
+    .picture-block__title {
+        font-size: 21px;
+        padding: 0 35px;
+    }
+}

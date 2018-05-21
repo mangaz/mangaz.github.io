@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>HTML Academy: Седона-Форма</title>
+      <link href="css/normalize.css" rel="stylesheet">
+      <link href="css/style.css" rel="stylesheet">
+   </head>
+   <body>
+      <header class="page-header">
+         <nav class="main-nav">
+            <div class="main-nav__wrapper">
+               <ul class="main-nav__list site-list">
+                  <li class="site-list__item">
+                     <a href="index.html" class="main-nav__link">Главная</a>
+                  </li>
+                  <li class="site-list__item">
+                     <a href="photo.html" class="main-nav__link">Фото и видео</a>
+                  </li>
+                  <li class="site-list__item">
+                     <a href="form.html" class="main-nav__link main-nav__link--active">Форма отзыва</a>
+                  </li>
+                  <li class="site-list__item">
+                     <a href="https://htmlacademy.ru" class="main-nav__link">HTML Academy</a>
+                  </li>
+               </ul>
+               <div class="main-nav__block">
+                  <a href="index.html" class="main-nav__logo">
+                     <picture>
+                        <source media="(max-width: 767px)" srcset="img/logo-sedona-mobile.svg">
+                        <source media="(max-width: 1199px)" srcset="img/logo-sedona-tablet.svg">
+                        <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+                        <img src="img/logo-sedona-desktop.svg" width="188" height="96" alt="logo">
+                     </picture>
+                  </a>
+                  <button type="button" class="main-nav__toggle-btn">
+                  <img src="img/icon-menu.svg" width="22" height="22" alt="открытие меню">
+                  </button>
+               </div>
+            </div>
+         </nav>
+      </header>
+      <main>
+         <h1 class="visually-hidden">Welcome to Sedona</h1>
+         <section class="info info--inside">
+            <div class="info__image info__image--form">
+               <img class="info__picture" src="img/text-sedona.svg" width="230" height="38" alt="welcome-to-sedona">
+            </div>
+            <div class="info__text-block info__text-block--inside">
+               <h2 class="info__title info__title--inside">Оставьте свой отзыв</h2>
+               <p class="info__desc">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещённых вами достопримечательностях</p>
+            </div>
+         </section>
+         <section class="sedona-form">
+            <div class="sedona-form__wrapper wrapper-center">
+               <form class="sedona-form__sections" action="https://echo.htmlacademy.ru/" method="post">
+                  <div class="sedona-form__section sedona-form__section--main">
+                     <h2 class="sedona-form__title">Представьтесь:</h2>
+                     <div class="sedona-form__block">
+                        <label for="name" class="sedona-form__label">Имя<sup>*</sup>:</label>
+                        <input id="name" class="sedona-form__input" type="text" name="user-name" placeholder="Пётр" required>
+                     </div>
+                     <div class="sedona-form__block">
+                        <label for="surname" class="sedona-form__label">Фамилия<sup>*</sup>:</label>
+                        <input id="surname" class="sedona-form__input" type="text" name="user-surname" placeholder="Иванов" required>
+                     </div>
+                     <div class="sedona-form__block">
+                        <label for="fathername" class="sedona-form__label">Отчество:</label>
+                        <input id="fathername" class="sedona-form__input" type="text" name="user-fathername" placeholder="Александрович">
+                     </div>
+                  </div>
+                  <div class="sedona-form__section sedona-form__section--info">
+                     <h2 class="sedona-form__title"><span>Контактная информация:</span></h2>
+                     <div class="sedona-form__block sedona-form__block--contacts">
+                        <label for="phone" class="sedona-form__label sedona-form__label--phone">Контактный телефон<sup>*</sup>:</label>
+                        <input id="phone" class="sedona-form__input" type="tel" name="user-phone" placeholder="Введите телефон" required>
+                     </div>
+                     <div class="sedona-form__block sedona-form__block--contacts">
+                        <label for="email" class="sedona-form__label sedona-form__label--mail">Электронная почта<sup>*</sup>:</label>
+                        <input id="email" class="sedona-form__input" type="email" name="user-email" placeholder="Введите e-mail" required>
+                     </div>
+                  </div>
+                  <div class="sedona-form__section sedona-form__section--imagion">
+                     <h2 class="sedona-form__title">Ваше общее впечатление:</h2>
+                     <div class="sedona-form__block sedona-form__block--radio">
+                        <input id="pro" class="visually-hidden sedona-form__radio" type="radio" name="vote" value="vote-pro" checked>
+                        <label for="pro" class="sedona-form__label sedona-form__label--radio">Скорее положительное</label>
+                     </div>
+                     <div class="sedona-form__block sedona-form__block--radio">
+                        <input id="contra" class="visually-hidden sedona-form__radio" type="radio" name="vote" value="vote-contra">
+                        <label for="contra" class="sedona-form__label sedona-form__label--radio">Скорее отрицательное</label>
+                     </div>
+                     <div class="sedona-form__block sedona-form__block--radio">
+                        <input id="zo" class="visually-hidden sedona-form__radio" type="radio" name="vote" value="vote-zo">
+                        <label for="zo" class="sedona-form__label sedona-form__label--radio">Затрудняюсь ответить</label>
+                     </div>
+                  </div>
+                  <div class="sedona-form__section sedona-form__section--rows">
+                     <h2 class="sedona-form__title"><span>Посещённые<br>достопримечательности:</span></h2>
+                     <div class="sedona-form__block sedona-form__block--checkbox">
+                        <input id="devil-bridge" class="visually-hidden sedona-form__checkbox" type="checkbox" name="visited" value="visited-devil-bridge" checked>
+                        <label for="devil-bridge" class="sedona-form__label sedona-form__label--checkbox">Мост Дьявола</label>
+                     </div>
+                     <div class="sedona-form__block sedona-form__block--checkbox">
+                        <input id="slide-park" class="visually-hidden sedona-form__checkbox" type="checkbox" name="visited" value="visited-slide-park" checked>
+                        <label for="slide-park" class="sedona-form__label sedona-form__label--checkbox">Слайд-парк</label>
+                     </div>
+                     <div class="sedona-form__block sedona-form__block--checkbox">
+                        <input id="bell-mount" class="visually-hidden sedona-form__checkbox" type="checkbox" name="visited" value="visited-bell-mount">
+                        <label for="bell-mount" class="sedona-form__label sedona-form__label--checkbox">Гора-Колокол</label>
+                     </div>
+                     <div class="sedona-form__block sedona-form__block--checkbox">
+                        <input id="red-rocks" class="visually-hidden sedona-form__checkbox" type="checkbox" name="visited" value="visited-red-rocks" checked>
+                        <label for="red-rocks" class="sedona-form__label sedona-form__label--checkbox">Красные скалы</label>
+                     </div>
+                  </div>
+                  <div class="sedona-form__section sedona-form__section--emotions">
+                     <h2 class="sedona-form__title"><span>Опишите свои эмоции:</span></h2>
+                     <div class="sedona-form__block">
+                        <textarea class="sedona-form__desc-emotions" name="emotions" placeholder="Опишите подробно все свои восторги"></textarea>
+                     </div>
+                  </div>
+                  <div class="sedona-form__section sedona-form__section--border">
+                     <input class="sedona-form__submit btn" type="submit" value="Отправить отзыв">
+                     <p class="sedona-form__info">* — Обязательные поля</p>
+                  </div>
+               </form>
+            </div>
+         </section>
+      </main>
+      <footer class="page-footer">
+         <div class="page-footer__last-block page-footer__container">
+            <a class="page-footer__tag" href="#">#visitsedona</a>
+         </div>
+         <div class="socials page-footer__container">
+            <a class="socials__btn socials__btn--twitter" href="#">
+               <span class="visually-hidden">twitter</span>
+               <svg xmlns="http://www.w3.org/2000/svg" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663">
+                  <path d="M11.283,0.153c1.736-0.484,3.074,0.264,3.685,1.15 c0.694-0.225,1.372-0.47,2.072-0.69c-0.004,0.841-0.538,1.478-0.883,1.728C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.977-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.319,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.655,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.788,11.283,0.153z"/>
+               </svg>
+            </a>
+            <a class="socials__btn socials__btn--fb" href="#">
+               <span class="visually-hidden">facebook</span>
+               <svg xmlns="http://www.w3.org/2000/svg" width="8.672px" height="18.944px" viewBox="0 0 8.672 18.944">
+                  <path d="M6.275,3.356c0.799,0,1.599,0,2.398,0c0-1.119,0-2.237,0-3.356c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.114 H0v3.518h1.959c0,3.104,0,6.208,0,9.312c1.279,0,2.559,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.114H5.787 C5.765,5.069,5.75,3.709,6.275,3.356z"/>
+               </svg>
+            </a>
+            <a class="socials__btn socials__btn--youtube" href="#">
+               <span class="visually-hidden">youtube</span>
+               <svg xmlns="http://www.w3.org/2000/svg" width="19.979px" height="14.015px" viewBox="0 0 19.979 14.015">
+                  <path d="M17.145,0H2.835C1.275,0,0,1.275,0,2.835v8.345c0,1.56,1.275,2.835,2.835,2.835h14.31c1.56,0,2.835-1.275,2.835-2.835V2.835 C19.979,1.275,18.704,0,17.145,0z M7.036,10.392V3.623l6.769,3.384L7.036,10.392z"/>
+               </svg>
+            </a>
+         </div>
+         <div class="page-footer__made-by page-footer__container">
+            <span class="page-footer__desc">Разработано</span>
+            <a class="page-footer__made-by-link" href="https://htmlacademy.ru/" title="HTMLAcademy.ru">
+               <svg aria-label="html academy" xmlns="http://www.w3.org/2000/svg" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09">
+                  <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.473,8.017l13.43-7.99l0.042-0.025V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 L13.494,5.23l-0.087,0.05l-0.088-0.056v0.109L1.925,12.118V3.147l11.548-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.014,1.415l5.904,3.513l-0.86,0.507l-5.03-2.992l-0.014,1.415l3.827,2.275l-0.782,0.523l-3.031-1.787 l-0.014,1.413l1.853,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.016,1.044L5.41,18.234L5.395,19.65 l7.979,4.795l0.018,1.076l-7.973-4.74l-0.013,1.414l8.021,4.822l0.046,0.025l8.143-4.872l-0.011-5.177l3.415-2.036v10.021 L13.472,31.85L1.925,24.979V15.127z"/>
+               </svg>
+            </a>
+         </div>
+      </footer>
+   </body>
+</html>

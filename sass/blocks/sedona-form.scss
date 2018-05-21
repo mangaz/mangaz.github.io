@@ -1,0 +1,303 @@
+.sedona-form__title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #000000;
+    line-height: 26px;
+    margin: 0 0 24px;
+    text-align: center;
+}
+.sedona-form__label {
+    font-size: 14px;
+    color: #333333;
+    line-height: 26px;
+    margin-right: 14px;
+}
+.sedona-form__input {
+    font-size: 18px;
+    font-weight: 700;
+    color: #000000;
+    line-height: 26px;
+    text-transform: initial;
+    flex-grow: 1;
+    min-width: 100px;
+    padding: 12px 24px;
+    background-color: #f2f2f2;
+    border: 4px solid #f2f2f2;
+}
+.sedona-form__submit {
+    background-color: #81b3d2;
+    font-size: 21px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 26px;
+}
+.sedona-form__desc-emotions {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #000000;
+    line-height: 26px;
+}
+.sedona-form__label--radio, .sedona-form__label--checkbox {
+    text-transform: initial;
+}
+.sedona-form__input::placeholder, .sedona-form__desc-emotions::placeholder {
+    opacity: 1;
+    color: #000;
+}
+.sedona-form__section {
+    border-top: 1px solid #e5e5e5;
+    padding: 24px 20px;
+}
+.sedona-form__section--border {
+    border: none;
+}
+.sedona-form__submit {
+    width: 280px;
+    padding: 11px;
+    border: none;
+    text-transform: uppercase;
+}
+.sedona-form__block {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-top: 20px;
+}
+.sedona-form__block:first-of-type {
+    margin-top: 0;
+}
+.sedona-form__block--contacts {
+    flex-wrap: wrap;
+}
+.sedona-form__block--contacts label {
+    position: relative;
+    width: 100%;
+    margin: 0;
+}
+.sedona-form__block--contacts label::after {
+    display: block;
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 100%;
+    width: 58px;
+    height: 58px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #e6e6e6;
+}
+.sedona-form__label--phone::after {
+    background-image: url(../img/icon-phone.svg);
+}
+.sedona-form__label--mail::after {
+    background-image: url(../img/icon-mail.svg);
+}
+.sedona-form__label--radio, .sedona-form__block--checkbox {
+    position: relative;
+    padding: 16px 0 16px 80px;
+    color: #000000;
+    font-weight: 700;
+    line-height: 26px;
+    font-size: 18px;
+}
+.sedona-form__label--radio::before {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 58px;
+    height: 58px;
+    background-color: #f2f2f2;
+    border-radius: 100%;
+    left: 0;
+    top: 0;
+}
+.sedona-form__radio:checked + .sedona-form__label--radio::after {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    background-color: #333333;
+    border-radius: 100%;
+    left: 18px;
+    top: 18px;
+}
+.sedona-form__label--checkbox::before {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 58px;
+    height: 58px;
+    background-color: #f2f2f2;
+    border-radius: 4px;
+    left: 0;
+    top: 0;
+}
+.sedona-form__checkbox:checked + .sedona-form__label--checkbox::after {
+    background: url(../img/icon-tick.svg) center center no-repeat;
+    display: block;
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 16px;
+    left: 16px;
+    top: 20px;
+    background-size: 100% 100%;
+}
+.sedona-form__desc-emotions {
+    width: 280px;
+    height: 160px;
+    background-color: #f2f2f2;
+    padding: 22px;
+    border: 5px solid #f2f2f2;
+}
+.sedona-form__info {
+    display: none;
+}
+@media(min-width:$tablet) {
+    .sedona-form__info {
+        display: block;
+        font-size: 14px;
+        line-height: 26px;
+        color: #333333;
+    }
+    .sedona-form__section--border {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .sedona-form__desc-emotions {
+        width: 100%;
+        height: 160px;
+    }
+    .sedona-form__section {
+        width: 100%;
+        border: none;
+    }
+    .sedona-form__section--rows {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 458px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .sedona-form__block--checkbox {
+        width: 50%;
+        margin-top: 30px;  
+    }
+    .sedona-form__block--checkbox:first-of-type {
+        margin-top: 30px;
+    }
+    .sedona-form__title {
+        width: 100%;
+        font-size: 21px;
+        line-height: 26px;
+    }
+    .sedona-form__title span {
+        position: relative;
+        display: table;
+        margin: 0 auto;
+    }
+    .sedona-form__title span::before, .sedona-form__title span::after {
+        position: absolute;
+        display: block;
+        content: "";
+        background: #dbdbdb;
+        width: 200%;
+        top: 50%;
+        height: 1px;
+    }
+    .sedona-form__title span::before {
+        right: 100%;
+        margin-right: 60px;
+    }
+    .sedona-form__title span::after {
+        left: 100%;
+        margin-left: 60px;
+    }
+    .sedona-form__sections {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .sedona-form__section--imagion {
+        order: -1;
+    }
+    .sedona-form__section--imagion, .sedona-form__section--main {
+        width: 48%;
+    }
+    .sedona-form {
+        max-width: 648px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    .sedona-form__submit {
+        width: 324px;
+        padding: 17px;
+    }
+}
+@media(min-width:$desktop) {
+    .sedona-form__section--rows {
+        justify-content: space-between;
+        min-width: 100%;
+    }
+    .sedona-form__block--checkbox {
+        width: 23%;
+    }
+    .sedona-form {
+        max-width: 960px;
+    }
+    .sedona-form__section--info {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .sedona-form__block--contacts {
+        width: 48%;
+        margin-top: 0;
+        position: relative;
+        flex-wrap: nowrap;
+    }
+    .sedona-form__block--contacts label {
+        width: auto;
+        margin-right: 18px;
+        position: initial;
+        flex-shrink: 0;
+    }
+    .sedona-form__block--contacts label::after {
+        top: 0;
+    }
+    .sedona-form__submit {
+        width: 480px;
+    }
+}
+
+.sedona-form__radio:focus + .sedona-form__label--radio::before,
+.sedona-form__label--radio:hover::before{background: #e5e5e5;}
+.sedona-form__label--radio:active::before{background: #d5d5d5;}
+.sedona-form__label--radio:active::after, .sedona-form__radio:checked + .sedona-form__label--radio:active::after{background: #a4a4a4;}
+.sedona-form__radio:focus + .sedona-form__label--radio::before {outline: 1px solid;}
+
+.sedona-form__checkbox:focus + .sedona-form__label--checkbox::before,
+.sedona-form__label--checkbox:hover::before{background: #e5e5e5;}
+.sedona-form__label--checkbox:active::before{background: #d5d5d5;}
+.sedona-form__label--checkbox:active::after, .sedona-form__checkbox:checked + .sedona-form__label--checkbox:active::after{opacity: 0.3;}
+.sedona-form__checkbox:focus + .sedona-form__label--checkbox::before {outline: 1px solid}
+
+.sedona-form__input:hover, .sedona-form__desc-emotions:hover {
+    background-color: #e5e5e5;
+    border-color: #e5e5e5;
+}
+.sedona-form__input:focus, .sedona-form__desc-emotions:focus {
+    background-color: #fff;
+    border-color: #e5e5e5; 
+}
+
+.sedona-form__submit:hover, .sedona-form__submit:focus {
+    background: #669ec0;
+}
+.sedona-form__submit:active {
+    background: #5496bd;
+    color: #94b9d2;
+}

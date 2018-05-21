@@ -1,0 +1,49 @@
+html {
+    font-family: "PT Sans", Arial, sans-serif; 
+    box-sizing: border-box;
+  }
+  body{
+    width: 320px;
+    margin: 0 auto;
+    text-transform: uppercase;
+  }
+  *, *::before, *::after {
+    box-sizing: inherit;
+  }
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: none;
+    overflow: hidden;
+    white-space: nowrap;
+    clip: rect(0, 0, 0, 0);
+    clip-path: inset(100%)
+   }
+  @font-face{
+    font-family: "PT Sans";
+    src: url('../fonts/ptsans.woff') format('woff'), url('../fonts/ptsans.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+   }
+  @font-face{
+    font-family: "PT Sans";
+    src: url('../fonts/ptsansbold.woff') format('woff'), url('../fonts/ptsansbold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+   }
+   @media(min-width:$tablet) {
+     body {width: $tablet;}
+   }
+   @media(min-width:$desktop) {
+    body {
+      width: $desktop;
+      box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.2);
+      background-color: #ffffff;
+    }
+    html {
+      background: #f2f2f2;
+    }
+  }

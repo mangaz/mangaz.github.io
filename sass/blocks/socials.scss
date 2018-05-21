@@ -1,0 +1,26 @@
+.socials {
+    display: flex;
+    justify-content: center;
+}
+.socials__btn {
+    background-color: #81b3d2;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 46px;
+    height: 48px;
+    margin: 0 3px;
+}
+.socials__btn svg {
+    fill: #fff;
+}
+.socials__btn:hover, .socials__btn:focus {
+    background: #669ec0;
+}
+.socials__btn:active{
+    background: #5496bd;
+}
+.socials__btn:active svg{
+    opacity: 0.3;
+}
