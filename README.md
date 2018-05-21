@@ -1,2 +1,2 @@
 # mangaz.github.io
-<a href="https://mangaz.github.io">ссылка на сайт</a>
+<a href="https://mangaz.github.io" target="_blank">ссылка на сайт</a>
